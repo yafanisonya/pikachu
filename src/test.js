@@ -1,4 +1,4 @@
-import string from '/src/css'
+import string from '../src/css.js'
 
 let n = 0
 
