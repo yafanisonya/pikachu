@@ -135,6 +135,8 @@ var _css = _interopRequireDefault(require("./css"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var n = 0;
+var demoText = document.querySelector('#demoText');
+var demoHtml = document.querySelector('#demoHtml');
 demoText.innerText = _css.default.substr(0, n);
 demoHtml.innerHTML = _css.default.substr(0, n);
 var time = 100;
@@ -163,27 +165,27 @@ var pause = function pause() {
   window.clearInterval(id);
 };
 
-btnPause.onclick = function () {
+document.querySelector('#btnPause').onclick = function () {
   pause();
 };
 
-btnPlay.onclick = function () {
+document.querySelector('#btnPlay').onclick = function () {
   id = play();
 };
 
-btnSlow.onclick = function () {
+document.querySelector('#btnSlow').onclick = function () {
   pause();
   time = 300;
   id = play();
 };
 
-btnNormal.onclick = function () {
+document.querySelector('#btnNormal').onclick = function () {
   pause();
   time = 100;
   id = play();
 };
 
-btnFast.onclick = function () {
+document.querySelector('#btnFast').onclick = function () {
   pause();
   time = 0;
   id = play();
@@ -216,7 +218,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "13811" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "6812" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

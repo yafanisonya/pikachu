@@ -1,5 +1,9 @@
-import string from './css'
+import string from '/src/css'
+
 let n = 0
+
+const demoText = document.querySelector('#demoText')
+const demoHtml = document.querySelector('#demoHtml')
 demoText.innerText  = string.substr(0,n)
 demoHtml.innerHTML = string.substr(0,n)
 
@@ -23,19 +27,19 @@ const play = ()=>{
 let id = play()
 const pause = ()=>{ window.clearInterval(id) }
 
-btnPause.onclick = ()=>{ pause()}
-btnPlay.onclick = ()=> { id = play() }
-btnSlow.onclick = ()=> {
+document.querySelector('#btnPause').onclick = ()=>{ pause()}
+document.querySelector('#btnPlay').onclick = ()=> { id = play() }
+document.querySelector('#btnSlow').onclick = ()=> {
   pause()
   time = 300
   id = play()
 }
-btnNormal.onclick = ()=> {
+document.querySelector('#btnNormal').onclick = ()=> {
   pause()
   time = 100
   id = play()
 }
-btnFast.onclick = ()=> {
+document.querySelector('#btnFast').onclick = ()=> {
   pause()
   time = 0
   id = play()

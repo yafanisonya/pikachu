@@ -1,4 +1,4 @@
-import string from './css'
+import string from '/src/css'
 
 const player = {
   n:0,

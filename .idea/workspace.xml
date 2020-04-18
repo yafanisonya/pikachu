@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="607734bd-d352-4615-bd0c-c2518abc080c" name="Default Changelist" comment="" />
+    <list default="true" id="607734bd-d352-4615-bd0c-c2518abc080c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.cache/80/d5303e9f222fec449ef6661b8fc25e.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/80/d5303e9f222fec449ef6661b8fc25e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test.e98b79dd.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.e98b79dd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test.e98b79dd.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.e98b79dd.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test2.7172738b.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test2.7172738b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test2.7172738b.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test2.7172738b.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test2.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,9 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1Y0j6k0hvTMnXUIU531oxZlw0WK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -47,7 +61,8 @@
       <updated>1582086233350</updated>
       <workItem from="1582086237406" duration="672000" />
       <workItem from="1586938946844" duration="10814000" />
-      <workItem from="1587200300483" duration="13534000" />
+      <workItem from="1587200300483" duration="14354000" />
+      <workItem from="1587218815355" duration="641000" />
     </task>
     <servers />
   </component>
