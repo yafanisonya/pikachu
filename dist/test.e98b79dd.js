@@ -130,67 +130,76 @@ exports.default = _default;
 },{}],"test.js":[function(require,module,exports) {
 "use strict";
 
-var _css = _interopRequireDefault(require("../src/css.js"));
+var _css = _interopRequireDefault(require("./css.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var n = 0;
-var demoText = document.querySelector('#demoText');
-var demoHtml = document.querySelector('#demoHtml');
-demoText.innerText = _css.default.substr(0, n);
-demoHtml.innerHTML = _css.default.substr(0, n);
-var time = 100;
+var player = {
+  id: undefined,
+  time: 100,
+  ui: {
+    demoHtml: document.querySelector('#demoHtml'),
+    demoText: document.querySelector('#demoText')
+  },
+  events: {
+    '#btnPause': 'pause',
+    '#btnPlay': 'play',
+    '#btnSlow': 'slow',
+    '#btnNormal': 'normal',
+    '#btnFast': 'fast'
+  },
+  n: 1,
+  init: function init() {
+    player.ui.demoHtml.innerText = _css.default.substr(0, player.n);
+    player.ui.demoText.innerHTML = _css.default.substr(0, player.n);
+    player.bindEvents();
+    player.play();
+  },
+  bindEvents: function bindEvents() {
+    for (var key in player.events) {
+      if (player.events.hasOwnProperty(key)) {
+        var value = player.events[key]; // pause / play / slow
 
-var run = function run() {
-  n += 1;
+        document.querySelector(key).onclick = player[value];
+      }
+    }
+  },
+  run: function run() {
+    player.n += 1;
 
-  if (n > _css.default.length) {
-    window.clearInterval(id);
-    return;
+    if (player.n > _css.default.length) {
+      window.clearInterval(player.id);
+      return;
+    }
+
+    player.ui.demoHtml.innerText = _css.default.substr(0, player.n);
+    player.ui.demoText.innerHTML = _css.default.substr(0, player.n);
+    player.ui.demoHtml.scrollTop = player.ui.demoHtml.scrollHeight;
+  },
+  play: function play() {
+    player.id = setInterval(player.run, player.time);
+  },
+  pause: function pause() {
+    window.clearInterval(player.id);
+  },
+  slow: function slow() {
+    player.pause();
+    player.time = 300;
+    player.play();
+  },
+  normal: function normal() {
+    player.pause();
+    player.time = 100;
+    player.play();
+  },
+  fast: function fast() {
+    player.pause();
+    player.time = 0;
+    player.play();
   }
-
-  console.log(n + "：" + _css.default.substr(0, n));
-  demoText.innerText = _css.default.substr(0, n);
-  demoHtml.innerHTML = _css.default.substr(0, n);
-  demoText.scrollTop = demoText.scrollHeight - demoText.clientHeight;
 };
-
-var play = function play() {
-  return setInterval(run, time);
-};
-
-var id = play();
-
-var pause = function pause() {
-  window.clearInterval(id);
-};
-
-document.querySelector('#btnPause').onclick = function () {
-  pause();
-};
-
-document.querySelector('#btnPlay').onclick = function () {
-  id = play();
-};
-
-document.querySelector('#btnSlow').onclick = function () {
-  pause();
-  time = 300;
-  id = play();
-};
-
-document.querySelector('#btnNormal').onclick = function () {
-  pause();
-  time = 100;
-  id = play();
-};
-
-document.querySelector('#btnFast').onclick = function () {
-  pause();
-  time = 0;
-  id = play();
-};
-},{"../src/css.js":"css.js"}],"C:/Users/fanison/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+player.init();
+},{"./css.js":"css.js"}],"C:/Users/fanison/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

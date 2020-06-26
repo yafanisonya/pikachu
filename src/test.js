@@ -1,46 +1,66 @@
-import string from '../src/css.js'
+import string from './css.js'
 
-let n = 0
+const player = {
+  id: undefined,
+  time: 100,
+  ui: {
+    demoHtml: document.querySelector('#demoHtml'),
+    demoText: document.querySelector('#demoText')
+  },
+  events: {
+    '#btnPause': 'pause',
+    '#btnPlay': 'play',
+    '#btnSlow': 'slow',
+    '#btnNormal': 'normal',
+    '#btnFast': 'fast'
+  },
+  n: 1,
+  init: () => {
+    player.ui.demoHtml.innerText = string.substr(0, player.n)
+    player.ui.demoText.innerHTML = string.substr(0, player.n)
+    player.bindEvents()
+    player.play()
+  },
+  bindEvents: () => {
+    for (let key in player.events) {
+      if (player.events.hasOwnProperty(key)) {
+        const value = player.events[key] // pause / play / slow
+        document.querySelector(key).onclick = player[value]
+      }
+    }
 
-const demoText = document.querySelector('#demoText')
-const demoHtml = document.querySelector('#demoHtml')
-demoText.innerText  = string.substr(0,n)
-demoHtml.innerHTML = string.substr(0,n)
-
-let time = 100
-
-const run = () => {
-  n += 1;
-  if(n > string.length){
-    window.clearInterval(id)
-    return
+  },
+  run: () => {
+    player.n += 1
+    if (player.n > string.length) {
+      window.clearInterval(player.id)
+      return
+    }
+    player.ui.demoHtml.innerText = string.substr(0, player.n)
+    player.ui.demoText.innerHTML = string.substr(0, player.n)
+    player.ui.demoHtml.scrollTop = player.ui.demoHtml.scrollHeight
+  },
+  play: () => {
+    player.id = setInterval(player.run, player.time)
+  },
+  pause: () => {
+    window.clearInterval(player.id)
+  },
+  slow: () => {
+    player.pause()
+    player.time = 300
+    player.play()
+  },
+  normal: () => {
+    player.pause()
+    player.time = 100
+    player.play()
+  },
+  fast: () => {
+    player.pause()
+    player.time = 0
+    player.play()
   }
-  console.log(n + "：" + string.substr(0,n))
-  demoText.innerText = string.substr(0,n)
-  demoHtml.innerHTML = string.substr(0,n)
-  demoText.scrollTop = demoText.scrollHeight - demoText.clientHeight;
 }
 
-const play = ()=>{
-  return setInterval(run,time)
-}
-let id = play()
-const pause = ()=>{ window.clearInterval(id) }
-
-document.querySelector('#btnPause').onclick = ()=>{ pause()}
-document.querySelector('#btnPlay').onclick = ()=> { id = play() }
-document.querySelector('#btnSlow').onclick = ()=> {
-  pause()
-  time = 300
-  id = play()
-}
-document.querySelector('#btnNormal').onclick = ()=> {
-  pause()
-  time = 100
-  id = play()
-}
-document.querySelector('#btnFast').onclick = ()=> {
-  pause()
-  time = 0
-  id = play()
-}
+player.init()
