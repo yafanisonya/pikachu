@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="607734bd-d352-4615-bd0c-c2518abc080c" name="Default Changelist" comment="" />
+    <list default="true" id="607734bd-d352-4615-bd0c-c2518abc080c" name="Default Changelist" comment="script type">
+      <change beforePath="$PROJECT_DIR$/.cache/c5/b9f497edbe7c140efa957f61729742.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/c5/b9f497edbe7c140efa957f61729742.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test.e98b79dd.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.e98b79dd.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test2.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +57,8 @@
       <workItem from="1582086237406" duration="672000" />
       <workItem from="1586938946844" duration="10814000" />
       <workItem from="1587200300483" duration="14354000" />
-      <workItem from="1587218815355" duration="886000" />
+      <workItem from="1587218815355" duration="1895000" />
+      <workItem from="1588083788822" duration="51000" />
     </task>
     <task id="LOCAL-00001" summary="修改 css 路径">
       <created>1587219498733</created>
@@ -66,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587219686769</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="script type">
+      <created>1587219900202</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587219900202</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,13 +91,14 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="修改 css 路径" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改 css 路径" />
+    <MESSAGE value="script type" />
+    <option name="LAST_COMMIT_MESSAGE" value="script type" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="248" y="0" key="CommitChangelistDialog2" timestamp="1587219685845">
+    <state x="248" y="0" key="CommitChangelistDialog2" timestamp="1587220629399">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="248" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1587219685845" />
+    <state x="248" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1587220629399" />
     <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1582096586613">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
