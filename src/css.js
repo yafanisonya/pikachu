@@ -1,43 +1,40 @@
-const string = `
- .skin *{box-sizing: border-box;margin: 0;padding: 0;}
- .skin *::before, .skin *::after{box-sizing: border-box;}
- .skin {
-    background: #ffe600;
-    min-height: 50vh;
-    position: relative;
-  }
-  .nose{
-    border: 10px solid black;
-    border-color: black transparent transparent;
-    border-bottom: none;
-    width: 0px;
-    height: 0px;
-    position: relative;
-    left: 50%;
-    top: 145px;
-    margin-left: -10px;
-    z-index: 10;
-  }
-  @keyframes wave{
-    0%{
-      transform: rotate(0deg);    
-    }
-    33%{
-      transform: rotate(5deg);    
-    }
-    66%{
-      transform: rotate(-5deg);    
-  }
+const string = `.skin *{box-sizing: border-box;margin: 0;padding: 0;}
+.skin *::before, .skin *::after{box-sizing: border-box;}
+.skin{
+  background: #ffe600;
+  min-height: 50vh;
+  position: relative;
+}
+.nose{
+  border: 10px solid black;
+  border-color: black transparent transparent;
+  border-bottom: none;
+  width: 0px;
+  height: 0px;
+  position: relative;
+  left: 50%;
+  top: 145px;
+  margin-left: -10px;
+  z-index: 10;
+}
+@keyframes wave{
+  0%{
+    transform: rotate(0deg);
+}
+  33%{
+    transform: rotate(5deg);
+}
+  66%{
+    transform: rotate(-5deg);
+}
   100%{
-    transform: rotate(0deg);    
-  }
-
+    transform: rotate(0deg);
+}
 }
 .nose:hover{
   transform-origin: center bottom;
   animation: wave 300ms infinite linear;
 }
-
 .yuan{
   position: absolute;
   width: 20px;
@@ -47,7 +44,6 @@ const string = `
   border-radius: 10px 10px 0 0;
   background: black;
 }
-
 .eye {
   border: 2px solid #000;
   width: 64px;
@@ -121,7 +117,6 @@ const string = `
 }
 .mouth .up .lip.left::before{
   right: -6px;
-
 }
 .mouth .up .lip.right::before{
   left: -6px;
@@ -154,7 +149,6 @@ const string = `
   left: 50%;
   margin-left: -100px;
   border-radius: 100px;
-
 }
 .face{
   position: absolute;
@@ -186,4 +180,4 @@ const string = `
   border-radius: 50%;
 }
 `
-export default  string;
+export default string;
