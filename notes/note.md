@@ -58,8 +58,8 @@ let id = setInterval(()=>{
 
 `div#demoText` 通过 `js` 控制逐个显示css代码， `div#html`里面放置html代码布局，`demoHtml`通过`js`渲染css代码
 ```html
-<div id="demoText"></div> 
-<style id="demoHtml"></style>
+<div id="demoHtml"></div> 
+<style id="demoText"></style>
 
 <div id="html"></div>
 ```
@@ -91,7 +91,7 @@ let id = setInterval(()=>{
   width: 100%;
   height: 50vh;
 }
-#demoText{
+#demoHtml{
   position:fixed;
   height: 50vh;
   width: 100%;
@@ -100,7 +100,7 @@ let id = setInterval(()=>{
   border: 1px solid red;
   overflow-y: auto;
 }
-#demoText::-webkit-scrollbar{  
+#demoHtml::-webkit-scrollbar{  
   display: none;
 }
 #demoHtml{ display: none}

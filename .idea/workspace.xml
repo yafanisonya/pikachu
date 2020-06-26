@@ -2,9 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="607734bd-d352-4615-bd0c-c2518abc080c" name="Default Changelist" comment="script type">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/dist/test.e98b79dd.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.e98b79dd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/test.e98b79dd.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.e98b79dd.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/test.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.js.map" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.cache/15/f9500056ecf80644b850c016332d08.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/15/f9500056ecf80644b850c016332d08.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cache/41/8e4e00167d42ec373d50bea6a63be8.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/41/8e4e00167d42ec373d50bea6a63be8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cache/80/d5303e9f222fec449ef6661b8fc25e.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/80/d5303e9f222fec449ef6661b8fc25e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cache/89/c97075b12d5a81bb01c57e058f9f9f.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/89/c97075b12d5a81bb01c57e058f9f9f.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.1f19ae8e.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.1f19ae8e.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/style.e308ff8e.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/style.e308ff8e.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test.e98b79dd.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.e98b79dd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test.e98b79dd.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.e98b79dd.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test2.7172738b.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test2.7172738b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test2.7172738b.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test2.7172738b.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/notes/note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test2.js" afterDir="false" />
+>>>>>>> 290a7b4717922af8329501dac74b66205169ad78
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +74,9 @@
       <workItem from="1582086237406" duration="672000" />
       <workItem from="1586938946844" duration="10814000" />
       <workItem from="1587200300483" duration="14354000" />
-      <workItem from="1587218815355" duration="886000" />
+      <workItem from="1587218815355" duration="1895000" />
+      <workItem from="1588083788822" duration="51000" />
+      <workItem from="1593150869542" duration="2200000" />
     </task>
     <task id="LOCAL-00001" summary="修改 css 路径">
       <created>1587219498733</created>
@@ -70,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587219686769</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="script type">
+      <created>1587219900202</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587219900202</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,24 +109,21 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="修改 css 路径" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改 css 路径" />
+    <MESSAGE value="script type" />
+    <option name="LAST_COMMIT_MESSAGE" value="script type" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="248" y="0" key="CommitChangelistDialog2" timestamp="1587219685845">
+    <state x="248" y="0" key="CommitChangelistDialog2" timestamp="1587220629399">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="248" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1587219685845" />
-    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1582096586613">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1582096586612" />
+    <state x="248" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1587220629399" />
     <state x="778" y="157" key="run.anything.popup" timestamp="1586952685145">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="778" y="157" key="run.anything.popup/0.0.1280.689@0.0.1280.689" timestamp="1586952685145" />
-    <state x="749" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1587216860727">
+    <state x="749" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1593152424904">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="749" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1587216860727" />
+    <state x="749" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1593152424904" />
   </component>
 </project>
